@@ -59,4 +59,24 @@ ul li{
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     user-select: none;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/noun-unchecked-60244.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/—Pngtree—check\ mark\ icon_3566316.png);
 }
